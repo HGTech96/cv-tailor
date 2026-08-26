@@ -1,0 +1,6 @@
+# Uncomment the next line to keep application history out of git:
+# jobs/
+*.pdf
+*.docx
+__pycache__/
+.DS_Store
