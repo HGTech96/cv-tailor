@@ -40,7 +40,7 @@ Software Development Engineer with 10 years of experience across backend enginee
 
 ### Software Development Engineer — Criteo — Yerevan, Armenia
 **Sep 2022 – Present**
-Context: AdTech engineering role across backend systems, reporting APIs, platform modernization, product delivery, and architecture design. Recognized in Q2 2026 as engineering lead for a feature team of 6+ engineers partnering with 2 product managers, covering reporting, billing/pricing, agentic troubleshooting, and platform decoupling initiatives.
+Context: AdTech engineering role across backend systems, reporting APIs, platform modernization, product delivery, and architecture design. Recognized in Q2 2026 as engineering lead for a feature team of 6+ engineers partnering with 2 product managers, covering reporting, billing/pricing, agentic troubleshooting, and platform decoupling initiatives. Works hybrid (office/remote) within a globally distributed team with no local peers, collaborating daily across time zones.
 
 Accomplishments (one per line, with real numbers wherever you have them):
 

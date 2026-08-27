@@ -6,8 +6,10 @@ These rules are absolute. A draft violating any of them is not done.
 
 - Default: **1 page** for <7 years of experience, up to **2 pages** otherwise.
   Never exceed 2 pages.
-- Max **6 bullets** for the current/most relevant role, max **4** for other
-  recent relevant roles, max **2** for older or less relevant roles.
+- Max **8 bullets** for the current/most relevant role, max **5** for other
+  recent relevant roles, max **3** for older or less relevant roles. These
+  are ceilings, not targets — for candidates with fewer years of experience
+  or thinner master-CV evidence, use fewer bullets rather than padding.
   Roles older than ~12 years: single line or omitted per profile.md.
 - Summary paragraph allowed when it earns its space (career transitions,
   senior roles, or when the JD asks for a profile); max 3 lines. Skip it
