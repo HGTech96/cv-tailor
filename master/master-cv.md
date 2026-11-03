@@ -184,7 +184,9 @@ Skills/tools used: Python, teaching, curriculum design, digital circuit design a
 
 ## Education
 - PhD in Electronics, Micro- and Nanoelectronics, National Polytechnic University of Armenia, 2019–2022 (Yerevan, Armenia)
-- <TODO — add MSc and BSc: degree, institution, years>
+- 2013-2017 - Bachelor's degree - Electrical Engineering, National Polytechnic University of Armenia
+- 2017-2019 - Master's degree - Electrical Engineering, National Polytechnic University of Armenia
+- 2019-2022 - PhD - Electronics, micro- and nanoelectronics, National Polytechnic University of Armenia
 
 ## Certifications & Training
 - TOEFL iBT — score 102 (ETS)

@@ -9,16 +9,25 @@ description: Converts resume YAML to professionally formatted PDF using Typst te
 
 Transform resume YAML files into professionally formatted PDF documents using Typst templates. Choose from 5 templates optimized for different use cases.
 
+## Default templates
+
+Unless the user names a specific template (or asks for "all" / "compare all"),
+generate **both Executive and Tech Modern** and hand back both PDFs — these are
+the user's preferred pair. Only generate a single template when the user asks
+for one by name.
+
 ## Quick Start
 
 ```bash
-# Step 1: Convert YAML to Typst
-python3 scripts/yaml_to_typst.py resume.yaml executive --output resume.typ
+# Step 1: Convert YAML to Typst (repeat per template)
+python3 scripts/yaml_to_typst.py resume.yaml executive --output resume_executive.typ
+python3 scripts/yaml_to_typst.py resume.yaml tech-modern --output resume_tech-modern.typ
 
-# Step 2: Compile to PDF
-python3 scripts/compile_typst.py resume.typ
+# Step 2: Compile each to PDF
+python3 scripts/compile_typst.py resume_executive.typ
+python3 scripts/compile_typst.py resume_tech-modern.typ
 
-# Result: resume.pdf
+# Result: resume_executive.pdf, resume_tech-modern.pdf
 ```
 
 ## Available Templates
@@ -207,9 +216,10 @@ Common alternatives: "Helvetica", "Arial", "Source Sans Pro", "Roboto"
 4. Ensure all required YAML fields present
 
 **Template selection:**
-1. Executive for most cases
-2. Compact if you have 10+ years of detailed experience
+1. Default to generating both Executive and Tech Modern (see "Default templates" above)
+2. Compact if you have 10+ years of detailed experience and need more density
 3. Minimal for creative/design-adjacent roles
+4. Modern Dense only for content that genuinely needs 20-25 bullets on one page
 
 **PDF generation:**
 1. Always review PDF before submitting
@@ -227,22 +237,24 @@ Avoid: resume.pdf, cv_final_v3.pdf
 ## Complete Example
 
 ```bash
-# Starting from YAML resume:
+# Starting from YAML resume — default pair (Executive + Tech Modern):
 
-# 1. Convert to Typst with executive template
 python3 scripts/yaml_to_typst.py resume.yaml executive \
   --output resume_executive.typ
-
-# 2. Compile to PDF
 python3 scripts/compile_typst.py resume_executive.typ \
-  --output final_resume.pdf
+  --output final_resume_executive.pdf
 
-# 3. Review PDF
-open final_resume.pdf  # macOS
+python3 scripts/yaml_to_typst.py resume.yaml tech-modern \
+  --output resume_tech-modern.typ
+python3 scripts/compile_typst.py resume_tech-modern.typ \
+  --output final_resume_tech-modern.pdf
+
+# Review both
+open final_resume_executive.pdf final_resume_tech-modern.pdf  # macOS
 # or
-xdg-open final_resume.pdf  # Linux
+xdg-open final_resume_executive.pdf  # Linux
 
-# 4. (Optional) Generate alternative template for comparison
+# (Optional) Generate another template on request
 python3 scripts/yaml_to_typst.py resume.yaml compact \
   --output resume_compact.typ
 python3 scripts/compile_typst.py resume_compact.typ \
