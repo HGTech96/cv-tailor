@@ -1,0 +1,12 @@
+# Personal data — keep your career record and applications out of git
+master/*
+!master/*.example.md
+jobs/*
+!jobs/_example-job/
+prompt.md
+
+*.pdf
+*.docx
+__pycache__/
+.DS_Store
+.idea/
